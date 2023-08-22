@@ -44,7 +44,10 @@ p {
 
 .bg-primary {
     background-color: $theme-primary;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
 }
+
 
 .bg-dark {
     background-color: $theme-dark;
@@ -157,7 +160,7 @@ header {
     background-position: center;
     background-image: url('../img/andrew-kliatskyi-iQUf7gndqXE-unsplash.jpg');
     text-align: center;
-    color: white;
+    color: rgb(230, 230, 230);
     .header-content {
         position: relative;
         text-align: center;
@@ -166,7 +169,7 @@ header {
         .header-content-inner {
             h1 {
                 font-weight: 700;
-                text-transform: uppercase;
+                text-transform: none;
                 margin-top: 0;
                 margin-bottom: 0;
             }
@@ -175,7 +178,7 @@ header {
             }
             p {
                 font-weight: 300;
-                color: rgba(white, .7);
+                color: rgba(rgb(230, 230, 230), .9);
                 font-size: 16px;
                 margin-bottom: 50px;
             }
@@ -222,6 +225,7 @@ header {
     }
 }
 
+// Inserted new portfolio-box from GPT
 .portfolio-box {
     position: relative;
     display: block;
@@ -283,6 +287,13 @@ header {
     height: auto; /* Allows the image to keep its natural aspect ratio */
 }
 
+.portfolio-image {
+    width: 100%;     /* Takes the full width of the container */
+    height: auto;    /* Keeps the image's natural aspect ratio */
+    object-fit: cover; /* Covers the entire space without distortion */
+    max-height: 600px; /* Set a maximum height if desired to control the height */
+}
+
 // .portfolio-box {
 //     position: relative;
 //     display: block;
@@ -339,10 +350,25 @@ header {
 //     }
 // }
 
+
+//call-to-action
 .call-to-action {
     h2 {
         margin: 0 auto 20px;
     }
+}
+
+.custom-list {
+    list-style-type: disc; /* default bullet style */
+    padding-left: 1em; /* adjust this value as needed */
+    margin: 0;
+    text-align: left; /* Left-aligns the text */
+}
+
+.custom-list li {
+    /* Add styles here for individual list items if needed */
+    margin-bottom: 8px; /* Adds a little space between list items */
+    color: #777; /* Making the text a bit faded, adjust the color as needed */
 }
 
 // Bootstrap Overrides
@@ -353,6 +379,10 @@ header {
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
+}
+
+.small-icon {
+    margin-bottom: 15px; /* Adjust this value as needed */
 }
 
 // Button Styles
