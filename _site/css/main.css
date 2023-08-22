@@ -9,7 +9,7 @@ body {
 }
 
 hr {
-  border-color: #F05F40;
+  border-color: #3d3d3d;
   border-width: 3px;
   max-width: 50px;
 }
@@ -22,10 +22,10 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #F05F40;
+  color: #3d3d3d;
 }
 a:hover, a:focus {
-  color: #eb3812;
+  color: #242424;
 }
 
 h1,
@@ -44,7 +44,7 @@ p {
 }
 
 .bg-primary {
-  background-color: #F05F40;
+  background-color: #3d3d3d;
 }
 
 .bg-dark {
@@ -77,13 +77,13 @@ aside {
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
-  color: #F05F40;
+  color: #3d3d3d;
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
 .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
-  color: #eb3812;
+  color: #242424;
 }
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
@@ -94,11 +94,11 @@ aside {
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-  color: #F05F40;
+  color: #3d3d3d;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #F05F40 !important;
+  color: #3d3d3d !important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -129,11 +129,11 @@ aside {
     border-color: rgba(34, 34, 34, 0.5);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
-    color: #F05F40;
+    color: #3d3d3d;
     font-size: 14px;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #242424;
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
@@ -141,7 +141,7 @@ aside {
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
-    color: #F05F40;
+    color: #3d3d3d;
   }
 }
 
@@ -154,7 +154,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url("../img/19026371_MotionElements_4k-dark-glossy-background_converted_648867-256x144-3s-q2.gif");
+  background-image: url("../img/andrew-kliatskyi-iQUf7gndqXE-unsplash.jpg");
   text-align: center;
   color: white;
 }
@@ -224,14 +224,13 @@ header .header-content .header-content-inner p {
 .portfolio-box {
   position: relative;
   display: block;
-  max-width: 650px;
   margin: 0 auto;
 }
 .portfolio-box .portfolio-box-caption {
   color: white;
   opacity: 0;
   display: block;
-  background: rgba(240, 95, 64, 0.9);
+  background: rgba(61, 61, 61, 0.9);
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -273,12 +272,18 @@ header .header-content .header-content-inner p {
   }
 }
 
+/* For your images */
+.img-responsive {
+  max-width: 100%; /* Makes sure the image doesn't exceed the container */
+  height: auto; /* Allows the image to keep its natural aspect ratio */
+}
+
 .call-to-action h2 {
   margin: 0 auto 20px;
 }
 
 .text-primary {
-  color: #F05F40;
+  color: #3d3d3d;
 }
 
 .no-gutter > [class*=col-] {
@@ -313,26 +318,26 @@ header .header-content .header-content-inner p {
 
 .btn-primary {
   color: white;
-  background-color: #F05F40;
-  border-color: #F05F40;
+  background-color: #3d3d3d;
+  border-color: #3d3d3d;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle .btn-primary {
   color: white;
-  background-color: #ee4b28;
-  border-color: #ed431f;
+  background-color: #303030;
+  border-color: #2b2b2b;
 }
 .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle .btn-primary {
   background-image: none;
 }
 .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
-  background-color: #F05F40;
-  border-color: #F05F40;
+  background-color: #3d3d3d;
+  border-color: #3d3d3d;
 }
 .btn-primary .badge {
-  color: #F05F40;
+  color: #3d3d3d;
   background-color: white;
 }
 
