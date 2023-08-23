@@ -49,7 +49,7 @@ p {
 }
 
 .bg-white {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     width: 100vw; /* 100% of the viewport width */
     height: 100vh; /* 100% of the viewport height */
 }
@@ -242,7 +242,7 @@ header {
 .portfolio-box {
     position: relative;
     display: block;
-    margin: 2rem;
+    margin: 20rem;
     .portfolio-box-caption {
         color: white;
         opacity: 0;
@@ -294,10 +294,6 @@ header {
     }
 }
 
-/* Adjusting the title placement */
-.title-class {
-    margin-top: 10px; /* Adjust this value to position the title higher */
-}
 /* For your images */
 .img-responsive {
     max-width: 100%; /* Makes sure the image doesn't exceed the container */
