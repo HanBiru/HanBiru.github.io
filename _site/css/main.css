@@ -45,14 +45,10 @@ p {
 
 .bg-primary {
   background-color: #292929;
-  width: 100vw; /* 100% of the viewport width */
-  height: 100vh; /* 100% of the viewport height */
 }
 
 .bg-white {
   background-color: white;
-  width: 100vw; /* 100% of the viewport width */
-  height: 100vh; /* 100% of the viewport height */
 }
 
 .bg-dark {
