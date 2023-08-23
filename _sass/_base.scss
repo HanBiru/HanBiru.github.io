@@ -186,7 +186,7 @@ aside {
             
             &.active {
                 > a, > a:focus {
-                    color: white !important;
+                    color: rgb(165, 165, 165) !important;
                     background-color: transparent;
 
                     &:hover {
@@ -218,25 +218,58 @@ aside {
             }
         }
     }
+    // Collapsed navigation dropdown styles
+    .navbar-collapse {
+        @media (max-width: 767px) {  // Bootstrap's default breakpoint for collapsed navbar
+            background-color: rgba(0, 0, 0, 0.8); // Semi-transparent black
+
+            .nav {
+                > li {
+                    > a, > a:focus {
+                        color: white;  // Adjusting text color for better contrast against the darker background
+
+                        &:hover {
+                            color: rgba(white, .7);  // Slightly less intensity for hover state
+                        }
+                    }
+
+                    &.active {
+                        > a, > a:focus {
+                            color: rgba(white, .9) !important;  // Active link color with slightly reduced intensity
+
+                            &:hover {
+                                background-color: rgba(0, 0, 0, 0.9);  // Slightly darker background for hover on active links
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 
-// Homepage Header
 
+// Homepage Header
 header {
     position: relative;
     width: 100%;
-    min-height: auto;
-    @include background-cover;
-    background-position: center;
-    background-image: url('../img/andrew-kliatskyi-iQUf7gndqXE-unsplash.jpg');
+    height: 100vh; // This ensures the header takes up the entire viewport height
+    background: url('../img/andrew-kliatskyi-iQUf7gndqXE-unsplash.jpg') center/cover no-repeat; // This shorthand replaces the need for @include background-cover and background-position: center;
     text-align: center;
     color: rgb(230, 230, 230);
+
     .header-content {
-        position: relative;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
         text-align: center;
-        padding: 100px 15px 100px;
+        padding: 15px;
         width: 100%;
+
         .header-content-inner {
             h1 {
                 font-weight: 700;
@@ -244,9 +277,11 @@ header {
                 margin-top: 0;
                 margin-bottom: 0;
             }
+
             hr {
                 margin: 30px auto;
             }
+
             p {
                 font-weight: 300;
                 color: rgba(rgb(230, 230, 230), .9);
@@ -255,19 +290,16 @@ header {
             }
         }
     }
+
     @media (min-width: 768px) {
-        min-height: 100%;
         .header-content {
-            position: absolute;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
             padding: 0 50px;
+
             .header-content-inner {
                 max-width: 1000px;
                 margin-left: auto;
                 margin-right: auto;
+                
                 p {
                     font-size: 18px;
                     max-width: 80%;
@@ -278,6 +310,7 @@ header {
         }
     }
 }
+
 
 // Sections
 
@@ -309,7 +342,7 @@ header {
 .portfolio-box {
     position: relative;
     display: block;
-    margin: 20rem;
+    margin: 5%;
     .portfolio-box-caption {
         color: white;
         opacity: 0;
@@ -375,6 +408,7 @@ header {
 }
 
 
+
 // call-to-action
 .call-to-action {
     h2 {
@@ -402,18 +436,18 @@ header {
     text-align: left;
 }
 
-@media (max-width: 768px) {
-    .custom-list {
-        padding-left: 1em;  /* Adjusted value for smaller screens */
-    }
-}
-
-
 .custom-list li {
     margin-bottom: 16px;
     color: #9d9d9d;
     font-size: 1.3em;
 }
+
+@media (max-width: 768px) {
+    .custom-list {
+        padding-left: 3em;  /* Adjusted value for smaller screens */
+    }
+}
+
 
 
 // Bootstrap Overrides
@@ -456,6 +490,31 @@ header {
     color: $theme-dark;
     font-size: 4em;
 }
+
+
+// Aside
+/* Give the section a minimum height and use flexbox to organize its content */
+.aside-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Push the copyright to the bottom */
+.copyright-container {
+    margin-top: auto;
+    padding-bottom: 15px;  /* Some padding to keep it away from the absolute bottom */
+}
+
+/* Adjust the copyright text size */
+.copyright-text {
+    font-size: 1.1em;  /* Adjust this value as needed */
+}
+
+// /* Margins for the icons */
+// .col-lg-4.col-md-6.text-center {
+//     margin-bottom: 20px;  /* Adjust this value as needed */
+// }
 
 // Extras
 // -- Highlight Color Customization
