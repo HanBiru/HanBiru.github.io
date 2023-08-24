@@ -432,4 +432,8 @@ body {
   -webkit-tap-highlight-color: #232323;
 }
 
+#phoneLink:focus, #emailLink:focus {
+  outline: none;
+}
+
 /*# sourceMappingURL=main.css.map */

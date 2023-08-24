@@ -544,3 +544,8 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+#phoneLink:focus, #emailLink:focus {
+    outline: none;
+}
+
+
