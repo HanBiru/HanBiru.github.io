@@ -67,25 +67,68 @@ function navigateToEmail(linkElem) {
     window.location.href = "mailto:" + email;
 }
 
-document.querySelector("#phoneLink p").addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default anchor behavior
-    showPhoneNumber(this.parentElement);
-    event.stopPropagation(); // Stop event from reaching the parent link
+// document.querySelector("#phoneLink p").addEventListener('click', function(event) {
+//     event.preventDefault(); // Prevent the default anchor behavior
+//     showPhoneNumber(this.parentElement);
+//     event.stopPropagation(); // Stop event from reaching the parent link
+// });
+
+document.querySelector("#phoneLink").addEventListener('click', function(event) {
+    // Check if the clicked element is a paragraph
+    if (event.target.tagName === 'P') {
+        event.preventDefault();
+        showPhoneNumber(this);
+        event.stopPropagation();
+    }
+    // Check if the clicked element is an icon
+    else if (event.target.tagName === 'I') {
+        navigateToPhone(this);
+        event.preventDefault();
+        event.stopPropagation();
+    }
 });
 
-document.querySelector("#phoneLink i").addEventListener('click', function(event) {
-    navigateToPhone(this.parentElement);
-    event.preventDefault(); // Prevent the default anchor behavior
+document.querySelector("#emailLink").addEventListener('click', function(event) {
+    // Check if the clicked element is a paragraph
+    if (event.target.tagName === 'P') {
+        event.preventDefault();
+        showEmail(this);
+        event.stopPropagation();
+    }
+    // Check if the clicked element is an icon
+    else if (event.target.tagName === 'I') {
+        navigateToEmail(this);
+        event.preventDefault();
+        event.stopPropagation();
+    }
 });
 
-document.querySelector("#emailLink p").addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default anchor behavior
-    showEmail(this.parentElement);
-    event.stopPropagation(); // Stop event from reaching the parent link
-});
 
-document.querySelector("#emailLink i").addEventListener('click', function(event) {
-    navigateToEmail(this.parentElement);
-    event.preventDefault(); // Prevent the default anchor behavior
-});
+
+// Toggle Language Functionality
+function initializeLanguageToggle() {
+    var languageToggle = document.getElementById('languageToggle');
+    var languageLabel = document.getElementById('languageLabel');
+    // Select all elements with 'data-lang' attribute
+    var elementsEn = document.querySelectorAll('[data-lang="en"]');
+    var elementsJp = document.querySelectorAll('[data-lang="jp"]');
+
+    languageToggle.addEventListener('change', function() {
+        if(this.checked) {
+            // Switch to Japanese
+            languageLabel.textContent = 'EN';
+            elementsEn.forEach(element => element.style.display = 'none');
+            elementsJp.forEach(element => element.style.display = '');
+        } else {
+            // Switch back to English
+            languageLabel.textContent = 'JP';
+            elementsEn.forEach(element => element.style.display = '');
+            elementsJp.forEach(element => element.style.display = 'none');
+        }
+    });
+}
+
+window.onload = initializeLanguageToggle;
+
+
 
