@@ -8,23 +8,38 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">ReXTec</a>
+            <a class="navbar-brand page-scroll" href="#page-top">RexTec</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+                
                 <li>
-                    <a class="page-scroll" href="#about">Tjänster</a>
+                    <a class="page-scroll" href="#about" data-lang="en">Services</a>
+                    <a class="page-scroll" href="#about" data-lang="jp" style="display: none;">事業内容</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">Priser</a>
+                    <a class="page-scroll" href="#services" data-lang="en">Pricing</a>
+                    <a class="page-scroll" href="#services" data-lang="jp" style="display: none;">価格設定</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#portfolio">Om oss</a>
+                    <a class="page-scroll" href="#portfolio" data-lang="en">About us</a>
+                    <a class="page-scroll" href="#portfolio" data-lang="jp" style="display: none;">会社概要</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Kontakt</a>
+                    <a class="page-scroll" href="#contact" data-lang="en">Contact</a>
+                    <a class="page-scroll" href="#contact" data-lang="jp" style="display: none;">お問い合わせ</a>
+                </li>
+                
+                <li class="nav-item">
+                    <div class="language-toggle">
+                        <label class="switch">
+                            <input type="checkbox" id="languageToggle">
+                            <span class="slider round"></span>
+                        </label>
+                        <span id="languageLabel">JP</span>
+                    </div>
                 </li>
             </ul>
         </div>

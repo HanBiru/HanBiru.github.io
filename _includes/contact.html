@@ -1,34 +1,43 @@
 <section class="bg-white" id="contact">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center" style="margin-top: -30px;">
-                <h2 class="section-heading">Hör av dig!</h2>
+            <!-- English Text -->
+            <div class="col-lg-8 col-lg-offset-2 text-center" style="margin-top: -30px;" data-lang="en">
+                <h2 class="section-heading">Order a Demo</h2>
                 <hr class="primary">
-                <p style="margin-bottom: 60px;">Redo att ta ditt företag till nästa steg? 
+                <p style="margin-bottom: 60px;">Let us help your company grow! 
                     <br>
-                    Kontakta oss på email eller telefon och vi hör av oss så fort vi kan!
+                    Contact us on mail or phone.
                 </p>
             </div>
-        
-            <!-- Adjusted grid settings for phone icon box -->
+            <!-- Japanese Text -->
+            <div class="col-lg-8 col-lg-offset-2 text-center" style="margin-top: -30px; display: none;" data-lang="jp">
+                <h2 class="section-heading">デモを注文して下さい</h2>
+                <hr class="primary">
+                <p style="margin-bottom: 60px;">あなたの会社の成長を支援します！
+                    <br>
+                    メールまたは電話でお問い合わせください。
+                </p>
+            </div>
+
+            <!-- Phone Icon Box -->
             <div class="col-lg-3 col-lg-offset-3 text-center">
                 <a id="phoneLink" href="#" data-part1="72" data-part2="362" data-part3="3979">
                     <i class="fa fa-phone fa-4x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p>Visa nummer</p>
+                    <p data-lang="en">Show number</p>
+                    <p style="display: none;" data-lang="jp">番号を表示</p>
                 </a>
             </div>
 
-            <!-- Adjusted grid settings for email icon box -->
+            
+            <!-- Email Icon Box -->
             <div class="col-lg-3 text-center">
                 <a id="emailLink" href="#" data-user="service" data-domain="rextec" data-tld="se">
                     <i class="fa fa-envelope-o fa-4x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p>Visa email</p>
+                    <p data-lang="en">Show email</p>
+                    <p style="display: none;" data-lang="jp">Eメールを表示</p>
                 </a>
             </div>
-
         </div>
     </div>
-
-
-    
 </section>
