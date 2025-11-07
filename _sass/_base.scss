@@ -254,10 +254,19 @@ aside {
 header {
     position: relative;
     width: 100%;
-    height: 100vh; // This ensures the header takes up the entire viewport height
-    background: url('../img/Hans Copy Webpage.svg') center/cover no-repeat; // This shorthand replaces the need for @include background-cover and background-position: center;
+    min-height: 50vh; // Smaller initial height on mobile
+    background: url('../img/Hans Copy Webpage.svg') center top/100% auto no-repeat; // Width 100%, height auto to maintain aspect ratio
+    background-position: center top;
     text-align: center;
     color: rgb(230, 230, 230);
+    padding-bottom: 20px; // Small padding at bottom
+
+    @media (min-width: 768px) {
+        min-height: 100vh; // Full viewport height on larger screens
+        background-size: cover; // Use cover on larger screens for better visual
+        background-position: center center;
+        padding-bottom: 0;
+    }
 
     .header-content {
         position: absolute;
