@@ -105,30 +105,6 @@ document.querySelector("#emailLink").addEventListener('click', function(event) {
 
 
 
-// Toggle Language Functionality
-function initializeLanguageToggle() {
-    var languageToggle = document.getElementById('languageToggle');
-    var languageLabel = document.getElementById('languageLabel');
-    // Select all elements with 'data-lang' attribute
-    var elementsEn = document.querySelectorAll('[data-lang="en"]');
-    var elementsJp = document.querySelectorAll('[data-lang="jp"]');
-
-    languageToggle.addEventListener('change', function() {
-        if(this.checked) {
-            // Switch to Japanese
-            languageLabel.textContent = 'EN';
-            elementsEn.forEach(element => element.style.display = 'none');
-            elementsJp.forEach(element => element.style.display = '');
-        } else {
-            // Switch back to English
-            languageLabel.textContent = 'JP';
-            elementsEn.forEach(element => element.style.display = '');
-            elementsJp.forEach(element => element.style.display = 'none');
-        }
-    });
-}
-
-window.onload = initializeLanguageToggle;
 
 
 
