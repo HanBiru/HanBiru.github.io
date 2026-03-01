@@ -255,16 +255,17 @@ header {
     position: relative;
     width: 100%;
     min-height: 50vh; // Smaller initial height on mobile
-    background: url('../img/Hans Copy Webpage.svg') center top/100% auto no-repeat; // Width 100%, height auto to maintain aspect ratio
-    background-position: center top;
+    // background: url('../img/Hans Copy Webpage.svg') center top/100% auto no-repeat; // muted during site renovation
+    // background-position: center top;
+    background-color: white;
     text-align: center;
-    color: rgb(230, 230, 230);
+    color: #333;
     padding-bottom: 20px; // Small padding at bottom
 
     @media (min-width: 768px) {
-        min-height: 100vh; // Full viewport height on larger screens
-        background-size: cover; // Use cover on larger screens for better visual
-        background-position: center center;
+        min-height: 50vh; // Reduced during site renovation (was 100vh with background image)
+        // background-size: cover; // muted during site renovation
+        // background-position: center center;
         padding-bottom: 0;
     }
 
