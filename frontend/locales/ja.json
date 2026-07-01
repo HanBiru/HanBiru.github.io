@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "brand": "REXTEC",
+    "services": "サービス",
+    "profile": "会社概要",
+    "team": "チーム",
+    "news": "ニュース",
+    "contact": "お問い合わせ",
+    "cta": "お問い合わせ"
+  },
+  "hero": {
+    "eyebrow": "AIコンサルティング",
+    "title": "Microsoft 365と連携する、\nエージェント型AI。",
+    "subtitle": "企業のためのAIエージェントを、Microsoft 365に統合して構築します。データは組織の外に出しません。",
+    "ctaPrimary": "ご相談はこちら",
+    "ctaSecondary": "サービスを見る"
+  },
+  "clients": {
+    "title": "採択・受賞歴"
+  },
+  "services": {
+    "eyebrow": "サービス",
+    "title": "業務になじむ、御社専用のAI。",
+    "office": {
+      "title": "Microsoft 365に統合",
+      "description": "Word・Excel・Outlook・Teams で動くAIエージェント。"
+    },
+    "custom": {
+      "title": "御社専用に設計",
+      "description": "既製のSaaSではなく、業務に合わせて構築します。"
+    },
+    "secure": {
+      "title": "データは組織の中に",
+      "description": "セキュリティ最優先。第三者に学習させません。"
+    }
+  },
+  "profile": {
+    "eyebrow": "会社概要",
+    "title": "会社概要",
+    "rows": {
+      "name": { "label": "会社名", "value": "レックステック株式会社" },
+      "address": {
+        "label": "住所",
+        "value": "宮城県仙台市青葉区荒巻字青葉４６８－１\n東北大学マテリアル・イノベーション・センター青葉山ガレージ"
+      },
+      "ceo": { "label": "代表取締役", "value": "ビルケダール・ハンス" },
+      "business": { "label": "事業内容", "value": "Microsoft 365と連携するエージェント型AIの設計・開発" },
+      "capital": { "label": "資本金", "value": "80万円" },
+      "founded": { "label": "設立", "value": "2025年10月7日" }
+    }
+  },
+  "team": {
+    "eyebrow": "チーム",
+    "title": "チーム",
+    "subtitle": "東北大学発。二人の創業者が率いています。",
+    "kendal": { "name": "フリッヅェル・ケンダル", "role": "CEO・創業者" },
+    "hans": { "name": "ビルケダール・ハンス", "role": "CTO・創業者" }
+  },
+  "news": {
+    "eyebrow": "ニュース",
+    "title": "ニュース"
+  },
+  "contact": {
+    "eyebrow": "お問い合わせ",
+    "title": "課題をお聞かせください。",
+    "body": "AI導入のご相談やご質問は、お気軽に。",
+    "reveal": "メールアドレスを表示"
+  },
+  "footer": {
+    "brand": "レックステック株式会社",
+    "tagline": "東北大学発スタートアップ ／ 宮城県仙台市",
+    "copyright": "© 2026　レックステック株式会社"
+  }
+}
