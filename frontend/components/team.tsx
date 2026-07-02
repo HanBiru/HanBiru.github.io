@@ -11,10 +11,7 @@ export function Team() {
     <section id="team" className="border-t border-[#e7e2d8] px-6 py-24 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-4xl">
         <div className="max-w-2xl">
-          <p className="text-xs font-medium uppercase tracking-[0.25em] text-[#a49f93]">
-            {t("team.eyebrow")}
-          </p>
-          <h2 className="mt-5 font-serif text-3xl font-medium tracking-wide text-[#1b1a17] sm:text-4xl">
+          <h2 className="font-serif text-3xl font-medium tracking-wide text-[#1b1a17] sm:text-4xl">
             {t("team.title")}
           </h2>
           <p className="mt-4 text-[#6b6760]">{t("team.subtitle")}</p>

@@ -6,6 +6,7 @@ const CREDENTIALS = [
   "MiTOHOKU Program 採択",
   "SOCIAL IMPACT BOOSTER 2025 採択",
   "宮城県スタートアップ加速化支援事業 採択",
+  "マルメ大学 Göran Bredinger 奨学金2025 受賞",
 ];
 
 export function Clients() {

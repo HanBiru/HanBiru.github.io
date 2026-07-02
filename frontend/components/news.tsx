@@ -2,7 +2,7 @@ import { t } from "@/lib/translations";
 
 type NewsItem = {
   month: string;
-  entries: { text: string; href: string }[];
+  entries: { text: string; href?: string }[];
 };
 
 type NewsYear = {
@@ -12,8 +12,57 @@ type NewsYear = {
 
 const NEWS: NewsYear[] = [
   {
+    year: "2026年",
+    items: [
+      {
+        month: "5月",
+        entries: [
+          {
+            text: "エージェント型AIコンサルティング事業を開始",
+          },
+        ],
+      },
+      {
+        month: "3月",
+        entries: [
+          {
+            text: "SENDAI Global Loungeにて、ゲーム障害・ネット依存をテーマにワークショップを開催",
+            href: "https://sendaigloballounge.jp/meetup6-report/",
+          },
+        ],
+      },
+      {
+        month: "1月",
+        entries: [
+          {
+            text: "マルメ大学（スウェーデン）「ヨーラン・ブレディンガー奨学金2025」受賞　自治体向けAI基盤「SchaktFlow」の開発に対して",
+            href: "https://mau.se/nyheter/klimatsmart-innovation-prisas-med-malmo-universitets-goran-bredinger-stipendium-2025/",
+          },
+        ],
+      },
+    ],
+  },
+  {
     year: "2025年",
     items: [
+      {
+        month: "12月",
+        entries: [
+          {
+            text: "SENDAI Global Lounge　創業者インタビュー「Why we chose Sendai」掲載",
+            href: "https://sendaigloballounge.jp/why-we-chose-sendai/",
+          },
+        ],
+      },
+      {
+        month: "11月",
+        entries: [
+          {
+            text: "ノーショーピン市（スウェーデン）にて自治体向けAI基盤「SchaktFlow」の実証を開始",
+            href: "https://schaktflow.se/",
+          },
+        ],
+      },
       {
         month: "10月",
         entries: [
@@ -82,10 +131,7 @@ export function News() {
   return (
     <section id="news" className="border-t border-[#e7e2d8] px-6 py-24 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-3xl">
-        <p className="text-xs font-medium uppercase tracking-[0.25em] text-[#a49f93]">
-          {t("news.eyebrow")}
-        </p>
-        <h2 className="mt-5 font-serif text-3xl font-medium tracking-wide text-[#1b1a17] sm:text-4xl">
+        <h2 className="font-serif text-3xl font-medium tracking-wide text-[#1b1a17] sm:text-4xl">
           {t("news.title")}
         </h2>
 
@@ -103,17 +149,23 @@ export function News() {
                       {item.month}
                     </span>
                     <div className="space-y-2">
-                      {item.entries.map((entry) => (
-                        <a
-                          key={entry.href}
-                          href={entry.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block leading-relaxed text-[#1b1a17] underline decoration-[#d8d2c6] underline-offset-4 transition-colors hover:decoration-[#1b1a17]"
-                        >
-                          {entry.text}
-                        </a>
-                      ))}
+                      {item.entries.map((entry) =>
+                        entry.href ? (
+                          <a
+                            key={entry.text}
+                            href={entry.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block leading-relaxed text-[#1b1a17] underline-offset-4 hover:underline hover:decoration-[#d8d2c6]"
+                          >
+                            {entry.text}
+                          </a>
+                        ) : (
+                          <p key={entry.text} className="leading-relaxed text-[#1b1a17]">
+                            {entry.text}
+                          </p>
+                        )
+                      )}
                     </div>
                   </div>
                 ))}

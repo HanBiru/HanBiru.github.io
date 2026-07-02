@@ -36,9 +36,7 @@ export function Navigation() {
         <div className="flex h-16 items-center justify-between">
           <a
             href="/"
-            className={`font-serif text-lg font-semibold tracking-[0.25em] ${
-              solid ? "text-[#1b1a17]" : "text-white"
-            }`}
+            className="font-serif text-lg font-semibold tracking-[0.25em] text-[#1b1a17]"
           >
             {t("nav.brand")}
           </a>
@@ -48,11 +46,7 @@ export function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                className={`text-sm transition-colors ${
-                  solid
-                    ? "text-[#6b6760] hover:text-[#1b1a17]"
-                    : "text-white/80 hover:text-white"
-                }`}
+                className="text-sm text-[#55524b] transition-colors hover:text-[#1b1a17]"
               >
                 {t(link.label)}
               </a>
@@ -65,7 +59,7 @@ export function Navigation() {
               className={`inline-flex items-center rounded-full px-5 py-2 text-sm font-medium transition-colors ${
                 solid
                   ? "bg-[#1b1a17] text-[#faf8f3] hover:bg-[#34322c]"
-                  : "border border-white/60 text-white hover:border-white"
+                  : "border border-[#1b1a17]/50 text-[#1b1a17] hover:border-[#1b1a17]"
               }`}
             >
               {t("nav.cta")}
@@ -74,7 +68,7 @@ export function Navigation() {
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className={`p-2 md:hidden ${solid ? "text-[#1b1a17]" : "text-white"}`}
+            className="p-2 text-[#1b1a17] md:hidden"
             aria-label="メニュー"
           >
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
