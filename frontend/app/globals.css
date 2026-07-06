@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bone: #faf8f3;
+  --surface: #ffffff;
+  --ink: #1b1a17;
+  --ink-soft: #6b6760;
+  --hairline: #e7e2d8;
+  --font-sans: 'Noto Sans JP';
+  --font-serif: 'Shippori Mincho';
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--ink);
+  background: var(--bone);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--ink);
+  color: var(--bone);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
