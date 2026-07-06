@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/navigation";
 import { Hero } from "@/components/hero";
+import { Mission } from "@/components/mission";
 import { Clients } from "@/components/clients";
 import { Services } from "@/components/services";
 import { Profile } from "@/components/profile";
@@ -14,6 +15,7 @@ export default function Home() {
       <Navigation />
       <Hero />
       <Clients />
+      <Mission />
       <Services />
       <Profile />
       <Team />

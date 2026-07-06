@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { t } from "@/lib/translations";
 
 const LINKS = [
+  { href: "/#mission", label: "nav.mission" },
   { href: "/#services", label: "nav.services" },
   { href: "/#profile", label: "nav.profile" },
   { href: "/#team", label: "nav.team" },
