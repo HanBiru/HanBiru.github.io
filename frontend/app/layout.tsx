@@ -4,11 +4,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "REXTEC – レックステック株式会社",
   description:
-    "AIで、人の力をもう一度引き出す。人の注意を奪うAIではなく、人を高めるAIを。Microsoft 365と連携するエージェント型AIの設計・開発。東北大学発スタートアップ。",
+    "AIで人の力をもう一度引き出す。人の注意を奪うAIではなく、人を高めるAIを。Microsoft 365と連携するエージェント型AIの設計・開発。東北大学発スタートアップ。",
   openGraph: {
     title: "REXTEC – レックステック株式会社",
     description:
-      "AIで、人の力をもう一度引き出す。Microsoft 365と連携するエージェント型AIの設計・開発。",
+      "AIで人の力をもう一度引き出す。Microsoft 365と連携するエージェント型AIの設計・開発。",
     type: "website",
   },
 };
